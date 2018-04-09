@@ -1,0 +1,146 @@
+<resources>
+
+    <!-- Base application theme./remove action bar-->
+    <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- When city info is shown, ActionBar colors -->
+    <style name="TitleBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Most used styles(used as common parent styles) -->
+    <style name="Match_Wrap_Center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Match_Cont_Center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabMaxWidth">@dimen/dimen_0dp</item>
+        <item name="tabIndicatorColor">@color/colorTealdark</item>
+        <item name="tabIndicatorHeight">@dimen/dimen_3dp</item>
+        <item name="tabPaddingStart">@dimen/tab_padding</item>
+        <item name="tabPaddingEnd">@dimen/tab_padding</item>
+        <item name="tabTextAppearance">@style/CustomTabAppearance</item>
+        <item name="tabGravity">fill</item>
+    </style>
+
+    <!-- Custom tab text appearance-->
+    <style name="CustomTabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+
+    <!-- Splash Screen -->
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!-- City Linear layout Style-->
+    <style name="CityStyleLinear" parent="Match_Cont_Center">
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_30dp</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Clickable textviews for city selection  -->
+    <style name="TextViewCity" parent="Match_Cont_Center">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Frame layout for ripple effect on clickable textViews on pick city screen -->
+    <style name="FrameLayoutCity">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- City screen panel common styles -->
+    <style name="CityPanel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+        <item name="android:paddingRight">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!-- CCity screen panel header -->
+    <style name="CityPanelHeader" parent="CityPanel">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:paddingBottom">@dimen/dimen_5dp</item>
+        <item name="android:paddingTop">@dimen/dimen_5dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_30dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Weather and time panels -->
+    <style name="CityPanelGreen" parent="CityPanel">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingBottom">@dimen/dimen_16dp</item>
+        <item name="android:paddingTop">@dimen/dimen_16dp</item>
+    </style>
+
+    <!-- City Facts style -->
+    <style name="CityFacts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!-- City facts Header -->
+    <style name="CityFactHeader" parent="CityFacts">
+        <item name="android:textColor">@color/colorPink</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- City facts panel -->
+    <style name="CityFactPanel" parent="CityFacts">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+    </style>
+
+    <!-- ListView textView Items -->
+    <style name="ListTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!-- Place activity textView Style -->
+    <style name="PlaceTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+    </style>
+
+</resources>

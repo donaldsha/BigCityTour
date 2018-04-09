@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:id="@+id/main_content">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_sights"
+        android:drawSelectorOnTop="true"
+        android:padding="@dimen/dimen_16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_scroll"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:backgroundTint="@color/colorYellow"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_arrow_upward_black_24dp"
+        app:layout_anchor="@id/list_sights"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.example.android.bigcitytour.ScrollAwareFABBehavoiur"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
